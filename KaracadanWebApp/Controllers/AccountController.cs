@@ -1,4 +1,5 @@
-﻿using KaracadanWebApp.Models;
+﻿using KaracadanWebApp.Data;
+using KaracadanWebApp.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -90,11 +91,9 @@ namespace KaracadanWebApp.Controllers
                 }
 
                 ApplicationUser user = new ApplicationUser();
-                user.UserName = userRegisterModel.UserName;
+                user.UserName = userRegisterModel.FullName;
                 user.Email = userRegisterModel.Email;
                 user.PhoneNumber = userRegisterModel.PhoneNumber;
-                user.FirstName = userRegisterModel.FirstName;
-                user.LastName = userRegisterModel.LastName;
 
                 IdentityResult result = await userManager.CreateAsync(user, userRegisterModel.Password);
 

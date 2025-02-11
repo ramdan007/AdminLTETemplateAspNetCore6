@@ -1,4 +1,4 @@
-using KaracadanWebApp;
+using KaracadanWebApp.Data;
 using KaracadanWebApp.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

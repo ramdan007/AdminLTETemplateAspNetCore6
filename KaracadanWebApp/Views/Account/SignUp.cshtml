@@ -35,13 +35,13 @@
             <form asp-action="SignUp" asp-id="SignUp" id="SignUp">
             
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" asp-for="UserName" name="UserName" placeholder="UserName">
+                        <input type="text" class="form-control" asp-for="FullName" name="FullName" placeholder="FullName">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-user"></span>
                         </div>
                     </div>
-                    <span asp-validation-for="UserName" class="text-danger"></span>
+                        <span asp-validation-for="FullName" class="text-danger"></span>
                 </div>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" asp-for="PhoneNumber" name="PhoneNumber" placeholder="PhoneNumber">
@@ -51,24 +51,6 @@
                         </div>
                     </div>
                     <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" asp-for="FirstName" name="FirstName" placeholder="FirstName">
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-user"></span>
-                        </div>
-                    </div>
-                    <span asp-validation-for="FirstName" class="text-danger"></span>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" asp-for="LastName" name="LastName" placeholder="LastName">
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-user"></span>
-                        </div>
-                    </div>
-                    <span asp-validation-for="LastName" class="text-danger"></span>
                 </div>
                 <div class="input-group mb-3">
                     <input type="email" class="form-control" asp-for="Email" name="Email" placeholder="Email">
